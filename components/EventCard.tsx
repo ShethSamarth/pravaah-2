@@ -20,7 +20,10 @@ const EventCard: React.FC<EventCardProps> = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
-      <Link href="/" className="flex md:flex-row flex-col gap-4">
+      <Link
+        href="/event/event-name"
+        className="flex md:flex-row flex-col gap-4"
+      >
         <Image
           src={imgUrl}
           alt="planet-01"
