@@ -10,6 +10,7 @@ interface EventCardProps {
   title: string
   subtitle: string
   index: number
+  route: string
 }
 
 const EventCard: React.FC<EventCardProps> = ({
@@ -17,11 +18,12 @@ const EventCard: React.FC<EventCardProps> = ({
   title,
   subtitle,
   index,
+  route,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 1)}>
       <Link
-        href="/event/event-name"
+        href={`/event/${route}`}
         className="flex md:flex-row flex-col gap-4"
       >
         <Image

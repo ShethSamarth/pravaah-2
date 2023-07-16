@@ -35,10 +35,10 @@ export default defineType({
       ],
     }),
     defineField({
-      name: "categories",
-      title: "Categories",
-      type: "array",
-      of: [{ type: "reference", to: { type: "category" } }],
+      name: "technical",
+      title: "Technical",
+      description: "Is this a Technical Event ?",
+      type: "boolean",
     }),
     defineField({
       name: "shortDescription",
@@ -51,6 +51,12 @@ export default defineType({
       type: "text",
     }),
     defineField({
+      name: "featured",
+      title: "Featured",
+      description: "Should this event feature on the home page ?",
+      type: "boolean",
+    }),
+    defineField({
       name: "datetime",
       title: "Date Time",
       type: "datetime",
@@ -61,4 +67,8 @@ export default defineType({
       type: "blockContent",
     }),
   ],
+  initialValue: {
+    featured: false,
+    technical: true,
+  },
 })
