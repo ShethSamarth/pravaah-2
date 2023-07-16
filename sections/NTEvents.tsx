@@ -10,7 +10,7 @@ const NTEvents = () => {
       <motion.div
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         className="2xl:max-w-[1280px] w-full mx-auto flex flex-col"
       >
         <TypingText title="| Events" textStyles="text-center" />
