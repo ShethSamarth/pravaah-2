@@ -45,7 +45,7 @@ const EventCard: React.FC<EventCardProps> = ({
 
           <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
             <Image
-              src="/arrow.svg"
+              src="/assets/arrow.svg"
               alt="arrow"
               width={100}
               height={100}

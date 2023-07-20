@@ -4,16 +4,16 @@ import { client } from "@/sanity/lib/client"
 import Events from "@/sections/Events"
 import { groq } from "next-sanity"
 
+export const revalidate = 60
+
 const EventsPage = async () => {
   const eventsTQuery = groq`*[_type == "events" && technical == true] {
     ...,
-    categories[]->
   }  | order(_createdAt asc)`
   const eventsT: Events[] = await client.fetch(eventsTQuery)
 
   const eventsNTQuery = groq`*[_type == "events" && technical == false] {
     ...,
-    categories[]->
   }  | order(_createdAt asc)`
   const eventsNT: Events[] = await client.fetch(eventsNTQuery)
 

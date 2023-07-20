@@ -6,19 +6,19 @@ import Events from "@/sections/Events"
 import Hero from "@/sections/Hero"
 import { groq } from "next-sanity"
 
+export const revalidate = 60
+
 export default async function Home() {
   const generalQuery = groq`*[_type == "general"]`
   const general: General[] = await client.fetch(generalQuery)
 
   const eventsTFQuery = groq`*[_type == "events" && technical == true && featured == true] {
     ...,
-    categories[]->
   }  | order(_createdAt asc)`
   const eventsTF: Events[] = await client.fetch(eventsTFQuery)
 
   const eventsNTFQuery = groq`*[_type == "events"  && technical == false ] {
     ...,
-    categories[]->
   }  | order(_createdAt asc)`
   const eventsNTF: Events[] = await client.fetch(eventsNTFQuery)
 

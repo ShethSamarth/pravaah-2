@@ -68,7 +68,7 @@ const Navbar = () => {
             ))}
           </nav>
           <Image
-            src="/menu.svg"
+            src="/assets/menu.svg"
             alt="menu"
             className="block md:hidden"
             width={24}

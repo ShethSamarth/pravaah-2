@@ -58,7 +58,7 @@ const NavbarDrawer: React.FC<NavbarDrawerProps> = ({
                           >
                             <span className="sr-only">Close Panel</span>
                             <Image
-                              src="/close.svg"
+                              src="/assets/close.svg"
                               width={24}
                               height={24}
                               alt="Close Panel"

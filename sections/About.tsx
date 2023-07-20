@@ -9,7 +9,6 @@ interface AboutProps {
 }
 
 const About: React.FC<AboutProps> = ({ data }) => {
-  console.log(data)
   return (
     <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       <div className="gradient-02 z-0" />
@@ -30,7 +29,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
 
         <motion.img
           variants={fadeIn("up", "tween", 0.3, 1)}
-          src="/arrow-down.svg"
+          src="/assets/arrow-down.svg"
           alt="arrow down"
           className="w-[18px] h-[28px] object-contain mt-[28px]"
         />

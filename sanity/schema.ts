@@ -6,5 +6,5 @@ import events from "./schemas/events"
 import general from "./schemas/general"
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [events, category, blockContent, general],
+  types: [blockContent, category, events, general],
 }

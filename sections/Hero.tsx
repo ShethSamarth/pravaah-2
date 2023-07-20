@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="absolute w-full lg:h-[300px] md:h-[250px] sm:h-[200px] h-[150px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
           <Image
-            src="/cover.png"
+            src="/assets/cover.png"
             alt="hero_cover"
             width={1500}
             height={1500}
