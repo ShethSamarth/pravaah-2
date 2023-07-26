@@ -43,24 +43,22 @@ const Footer = () => {
               Copyright © 2021 - 2023 Pravaah. All rights reserved.
             </p>
 
-            <div className="flex gap-4">
-              <Link href="https://www.twitter.com/" target="_blank">
+            <div className="flex gap-4 items-center">
+              <Link
+                href="https://www.facebook.com/people/Pravaah-Amtics/pfbid0Sv9Adz72ZJZc3Cm1672NXTccZJd4giFveRKfJT45XRcKAb7qcj6h11Eiv33FbSrhl/"
+                target="_blank"
+              >
                 <Image
-                  src="/social/twitter.svg"
-                  alt="Twitter"
+                  src="/social/facebook.svg"
+                  alt="Facebook"
                   width={24}
                   height={24}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/" target="_blank">
-                <Image
-                  src="/social/linkedin.svg"
-                  alt="LinkedIn"
-                  width={24}
-                  height={24}
-                />
-              </Link>
-              <Link href="https://www.instagram.com/" target="_blank">
+              <Link
+                href="https://www.instagram.com/pravaah.amtics/"
+                target="_blank"
+              >
                 <Image
                   src="/social/instagram.svg"
                   alt="Instagram"
@@ -68,10 +66,21 @@ const Footer = () => {
                   height={24}
                 />
               </Link>
-              <Link href="https://www.facebook.com/" target="_blank">
+              <Link href="https://twitter.com/Pravaah_Amtics" target="_blank">
                 <Image
-                  src="/social/facebook.svg"
-                  alt="Facebook"
+                  src="/social/twitter.svg"
+                  alt="Twitter"
+                  width={24}
+                  height={24}
+                />
+              </Link>
+              <Link
+                href="https://www.youtube.com/channel/UCvwQ-PGXCVCgdA9IABkiRvA"
+                target="_blank"
+              >
+                <Image
+                  src="/social/youtube.svg"
+                  alt="Youtube"
                   width={24}
                   height={24}
                 />

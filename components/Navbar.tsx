@@ -23,19 +23,9 @@ const Navbar = () => {
       active: pathname === "/events",
     },
     {
-      href: "/coordinators",
-      label: "Coordinators",
-      active: pathname === "/coordinators",
-    },
-    {
       href: "/about-host",
       label: "About Host",
       active: pathname === "/about-host",
-    },
-    {
-      href: "/contact",
-      label: "Contact",
-      active: pathname === "/contact",
     },
   ]
 
