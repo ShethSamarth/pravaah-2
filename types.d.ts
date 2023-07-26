@@ -53,3 +53,8 @@ interface Events extends Base {
   datetime: string
   body: Block[]
 }
+
+interface About extends Base {
+  title: string
+  body: Block[]
+}

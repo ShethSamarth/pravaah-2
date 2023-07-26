@@ -35,9 +35,7 @@ export const RichTextComponents = {
     h3: ({ children }: any) => (
       <h1 className="text-3xl py-10 font-bold">{children}</h1>
     ),
-    h4: ({ children }: any) => (
-      <h1 className="text-2xl py-10 font-bold">{children}</h1>
-    ),
+    h4: ({ children }: any) => <h1 className="text-2xl">{children}</h1>,
 
     blockquote: ({ children }: any) => (
       <blockquote className="border-l-[#F7AB0A] border-l-4 pl-5 py-5 my-5">
