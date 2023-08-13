@@ -36,9 +36,15 @@ const Footer = () => {
         <div className="flex flex-col">
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
           <div className="flex items-center justify-between flex-wrap gap-4">
-            <h4 className="font-extrabold text-[24px] text-white uppercase">
-              Pravaah
-            </h4>
+            <Link href="/">
+              <Image
+                src="/assets/logo.png"
+                alt="Logo"
+                width={26}
+                height={26}
+                className="object-contain"
+              />
+            </Link>
             <p className="font-normal text-[14px] text-white opacity-50">
               Copyright © 2021 - 2023 Pravaah. All rights reserved.
             </p>

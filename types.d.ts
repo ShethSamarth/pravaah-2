@@ -54,6 +54,12 @@ interface Events extends Base {
   body: Block[]
 }
 
+interface Coordinator extends Base {
+  name: string
+  description: string
+  image: Image
+}
+
 interface About extends Base {
   title: string
   body: Block[]

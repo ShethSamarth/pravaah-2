@@ -23,6 +23,11 @@ const Navbar = () => {
       active: pathname === "/events",
     },
     {
+      href: "/coordinators",
+      label: "Coordinators",
+      active: pathname === "/coordinators",
+    },
+    {
       href: "/about-host",
       label: "About Host",
       active: pathname === "/about-host",
@@ -44,11 +49,14 @@ const Navbar = () => {
       >
         <div className="absolute w-[50%] inset-0 gradient-01" />
         <div className="2xl:max-w-[1280px] w-full mx-auto flex justify-between gap-8">
-          <Link
-            href="/"
-            className="font-extrabold text-[24px] leading-[30.24px] text-white uppercase z-0"
-          >
-            Pravaah
+          <Link href="/" className="z-0">
+            <Image
+              src="/assets/logo.png"
+              alt="Logo"
+              width={26}
+              height={26}
+              className="object-contain"
+            />
           </Link>
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {routes.map((route) => (

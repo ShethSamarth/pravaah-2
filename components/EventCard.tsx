@@ -28,7 +28,7 @@ const EventCard: React.FC<EventCardProps> = ({
       >
         <Image
           src={imgUrl}
-          alt="planet-01"
+          alt={title}
           width={500}
           height={500}
           className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"

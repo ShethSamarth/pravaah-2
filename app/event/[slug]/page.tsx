@@ -60,20 +60,6 @@ const EventPage = async ({ params: { slug } }: Props) => {
               <p className="py-5 text-base md:text-lg">
                 {event.longDescription}
               </p>
-              <button
-                type="button"
-                className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]"
-              >
-                <Image
-                  width={24}
-                  height={24}
-                  src="/assets/headset.svg"
-                  alt="headset"
-                />
-                <span className="font-normal text-[16px] text-white">
-                  Register
-                </span>
-              </button>
             </div>
           </div>
           <article className="px-10 md:pt-14">
